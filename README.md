@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Skyline Starter: Premium Next.js 16 Template
 
-## Getting Started
+A cutting-edge, production-ready [Next.js 16](https://nextjs.org) starter template designed for speed, resiliency, and a premium developer experience. Built with **React 19**, **Tailwind 4**, and **Shadcn UI**.
 
-First, run the development server:
+## ✨ Features
+
+- **Framework**: Next.js 16 (App Router) with React 19 and React Compiler enabled.
+- **Styling**: Tailwind CSS 4 with a modern OKLCH color palette and dark mode support.
+- **State Management**: [Zustand 5](https://zustand.docs.pmnd.rs/) with optimistic updates and async CRUD demonstration.
+- **UI Components**: [Shadcn UI](https://ui.shadcn.com/) (Version 4) with premium custom-styled components.
+- **Resiliency**:
+  - Global and segment-level **Error Boundaries**.
+  - Branded **Loading States** for smooth navigation.
+  - Custom **404 Not Found** page.
+- **DX & SEO**:
+  - **Sonner** for professional toast notifications.
+  - Dynamic **Metadata** template for optimized SEO.
+  - Automated **Sitemap** and **Robots.txt** generation.
+  - **Geist** Typography pre-configured globally.
+
+---
+
+## 🛠 Tech Stack
+
+| Feature | Technology |
+| :--- | :--- |
+| **Frontend** | Next.js 16, React 19 |
+| **Styling** | Tailwind CSS 4, Shadcn/ui |
+| **State** | Zustand 5 |
+| **Icons** | Lucide React |
+| **Toasts** | Sonner |
+| **Type Safety** | TypeScript 5 |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Installation
+
+```bash
+npm install
+```
+
+### 2. Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Build & Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📂 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/app`: App Router, SEO helpers, and global layouts.
+- `src/components/layout`: Reusable layout components like Navbar and PageWrapper.
+- `src/components/ui`: Shadcn UI components.
+- `src/store`: Zustand state management.
+- `src/lib`: Utility functions (`cn` helper).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📖 Key Commands
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `npm run dev` - Start development server.
+- `npm run build` - Build for production.
+- `npm run lint` - Run ESLint checks.
+- `npm run format` - Format code with Prettier.
+- `npm run clean` - Deep clean `.next` and `node_modules`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛡 License
+
+This project is open-source and available under the MIT License.
